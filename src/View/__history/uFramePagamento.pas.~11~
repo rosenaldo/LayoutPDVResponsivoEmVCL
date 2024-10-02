@@ -1,0 +1,105 @@
+unit uFramePagamento;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls,
+  Vcl.StdCtrls,
+  Vcl.Imaging.pngimage, System.TypInfo;
+
+type
+  TTypePagamento = (pg_money, pg_creditcard);
+
+  TFrame_Pagamento = class(TFrame)
+    P_CONTAINER: TPanel;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    Panel5: TPanel;
+    Panel6: TPanel;
+    Panel7: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Panel8: TPanel;
+    Image1: TImage;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label6: TLabel;
+    EDT_NOME_CARTAO: TEdit;
+    Shape1: TShape;
+    Label10: TLabel;
+    Edit1: TEdit;
+    Shape2: TShape;
+    Label11: TLabel;
+    Edit2: TEdit;
+    Shape3: TShape;
+    Edit3: TEdit;
+    Label12: TLabel;
+    Shape4: TShape;
+    procedure Panel6Click(Sender: TObject);
+    procedure Panel8Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    FrameParent: TFrame;
+    PanelConteiner: TPanel;
+    IcoPag: TTypePagamento;
+    procedure AddImagem(Componente: TImage; Resource: string);
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrame_Pagamento.AddImagem(Componente: TImage; Resource: string);
+var
+  _Resource: TResourceStream;
+begin
+  _Resource := TResourceStream.Create(HInstance, Resource, RT_RCDATA);
+
+  try
+    Componente.Picture.LoadFromStream(_Resource);
+  finally
+    _Resource.Free;
+  end;
+
+end;
+
+procedure TFrame_Pagamento.Panel6Click(Sender: TObject);
+begin
+  FrameParent.Parent := Self.Parent;
+  Self.Parent.Width := FrameParent.Width;
+  FrameParent.Show;
+  Self.Destroy;
+end;
+
+procedure TFrame_Pagamento.Panel8Click(Sender: TObject);
+begin
+  case IcoPag of
+    pg_money:
+      IcoPag := pg_creditcard;
+    pg_creditcard:
+      IcoPag := pg_money;
+  end;
+  AddImagem(Image1, GetEnumName(TypeInfo(TTypePagamento), Integer(IcoPag)));
+
+  Label6.Visible := (IcoPag = pg_creditcard);
+  EDT_NOME_CARTAO.Visible := (IcoPag = pg_creditcard);
+  Label10.Visible := (IcoPag = pg_creditcard);
+  Edit1.Visible := (IcoPag = pg_creditcard);
+  Label11.Visible := (IcoPag = pg_creditcard);
+  Label12.Visible := (IcoPag = pg_creditcard);
+  Edit2.Visible := (IcoPag = pg_creditcard);
+  Edit3.Visible := (IcoPag = pg_creditcard);
+
+end;
+
+end.

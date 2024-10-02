@@ -1,0 +1,108 @@
+unit uFormPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Data.DB, Vcl.StdCtrls,
+  Vcl.Grids, Vcl.DBGrids, Vcl.Imaging.pngimage;
+
+type
+  TFRM_PRINCIPAL = class(TForm)
+    P_CONTAINER: TPanel;
+    P_TOPO: TPanel;
+    P_RODAPE: TPanel;
+    P_CENTRAL: TPanel;
+    P_ACOES: TPanel;
+    P_CENTRAL_01: TPanel;
+    P_TOPO_01: TPanel;
+    P_CENTRAL_02: TPanel;
+    P_TOPO_02: TPanel;
+    P_CENTRAL_03: TPanel;
+    DBGrid: TDBGrid;
+    Image1: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    Image2: TImage;
+    Label3: TLabel;
+    Label4: TLabel;
+    Shape1: TShape;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    Image3: TImage;
+    Image4: TImage;
+    Label12: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
+    P_CABECALHO: TPanel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label19: TLabel;
+    Label20: TLabel;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    Panel5: TPanel;
+    Panel6: TPanel;
+    Panel7: TPanel;
+    Panel8: TPanel;
+    Panel9: TPanel;
+    Panel10: TPanel;
+    Panel11: TPanel;
+    Panel12: TPanel;
+    Panel13: TPanel;
+    Panel14: TPanel;
+    Panel15: TPanel;
+    Panel16: TPanel;
+    Panel17: TPanel;
+    Panel18: TPanel;
+    Panel19: TPanel;
+    Panel20: TPanel;
+    Panel21: TPanel;
+    Panel22: TPanel;
+    procedure Label2Click(Sender: TObject);
+  private
+    procedure AjustarGrid(DBGrid: TDBGrid);
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRM_PRINCIPAL: TFRM_PRINCIPAL;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFRM_PRINCIPAL.AjustarGrid(DBGrid: TDBGrid);
+const
+  lCol_Codigo = 13.79;
+  lCol_Descricao = 27.30;
+  lCol_Quantidade = 18.23;
+  lCol_Preco = 12.68;
+  lCol_Desconto = 14.90;
+  lCol_Total = 11.58;
+begin
+  DBGrid.Columns[0].Width := Round((DBGrid.Width * lCol_Codigo) / 100);
+  DBGrid.Columns[0].Width := Round((DBGrid.Width * lCol_Descricao) / 100);
+  DBGrid.Columns[0].Width := Round((DBGrid.Width * lCol_Quantidade) / 100);
+  DBGrid.Columns[0].Width := Round((DBGrid.Width * lCol_Preco) / 100);
+  DBGrid.Columns[0].Width := Round((DBGrid.Width * lCol_Total) / 100);
+end;
+
+procedure TFRM_PRINCIPAL.Label2Click(Sender: TObject);
+begin
+  Close;
+end;
+
+end.

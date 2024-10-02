@@ -1,0 +1,15 @@
+object FRM_CONSULTAR_RESULTADO: TFRM_CONSULTAR_RESULTADO
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'FRM_CONSULTAR_RESULTADO'
+  ClientHeight = 480
+  ClientWidth = 640
+  Color = clHotLight
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+end

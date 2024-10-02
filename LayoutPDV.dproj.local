@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/09/16 09:56:24.000.886,=C:\Users\Windows 10\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/09/16 10:01:01.000.836,C:\Users\Windows 10\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFormPrincipal.pas</Transaction>
+    <Transaction>2024/09/16 10:01:01.000.836,C:\Users\Windows 10\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFormPrincipal.dfm</Transaction>
+    <Transaction>2024/09/16 10:01:25.000.677,C:\Users\Windows 10\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\LayoutPDV.dproj</Transaction>
+    <Transaction>2024/09/24 10:27:36.000.211,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 10:32:12.000.780,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.dfm=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFrameAcoes.dfm</Transaction>
+    <Transaction>2024/09/24 10:32:12.000.780,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.pas=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFrameAcoes.pas</Transaction>
+    <Transaction>2024/09/25 15:18:51.000.895,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\customer-serviceW.png</Transaction>
+    <Transaction>2024/09/25 15:18:51.000.705,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\credit-cards.png</Transaction>
+    <Transaction>2024/09/25 15:18:51.000.766,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\cupom.png</Transaction>
+    <Transaction>2024/09/25 15:18:51.000.725,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\credit-cardsW.png</Transaction>
+    <Transaction>2024/09/25 15:18:51.000.795,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\cupomW.png</Transaction>
+    <Transaction>2024/09/25 15:18:51.000.970,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\documentW.png</Transaction>
+    <Transaction>2024/09/25 15:18:51.000.925,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\document.png</Transaction>
+    <Transaction>2024/09/25 15:18:51.000.825,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\customer-service.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.699,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\recycle-bin.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.295,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\printer.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.846,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\settings.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.215,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\grocery-cartW.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.035,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\gift-voucher.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.375,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\printerW.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.080,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\gift-voucherW.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.483,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\profileW.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.125,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\grocery-cart.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.567,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\purchasing.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.436,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\profile.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.784,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\recycle-binW.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.630,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\purchasingW.png</Transaction>
+    <Transaction>2024/09/25 15:18:52.000.946,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\settingsW.png</Transaction>
+    <Transaction>2024/09/25 15:18:53.000.015,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\team.png</Transaction>
+    <Transaction>2024/09/25 15:18:53.000.084,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\teamW.png</Transaction>
+    <Transaction>2024/09/26 09:43:00.000.785,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\grocery.png</Transaction>
+    <Transaction>2024/09/26 09:43:00.000.863,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\groceryW.png</Transaction>
+    <Transaction>2024/09/26 09:43:00.000.707,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\customerW.png</Transaction>
+    <Transaction>2024/09/26 09:43:00.000.518,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\creditW.png</Transaction>
+    <Transaction>2024/09/26 09:43:00.000.452,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\credit.png</Transaction>
+    <Transaction>2024/09/26 09:43:00.000.980,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\recycle.png</Transaction>
+    <Transaction>2024/09/26 09:43:00.000.587,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\customer.png</Transaction>
+    <Transaction>2024/09/26 09:43:01.000.062,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\recycleW.png</Transaction>
+    <Transaction>2024/09/26 09:43:01.000.257,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\voucherW.png</Transaction>
+    <Transaction>2024/09/26 09:43:01.000.144,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\voucher.png</Transaction>
+    <Transaction>2024/09/30 09:33:32.000.122,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.pas</Transaction>
+    <Transaction>2024/09/30 09:55:11.000.787,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.dfm=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFrameAcao_01.dfm</Transaction>
+    <Transaction>2024/09/30 09:55:11.000.787,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.pas=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFrameAcao_01.pas</Transaction>
+    <Transaction>2024/09/30 12:25:04.000.404,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFrameAcao_01.dfm=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFramePagamento.dfm</Transaction>
+    <Transaction>2024/09/30 12:25:04.000.404,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFrameAcao_01.pas=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFramePagamento.pas</Transaction>
+    <Transaction>2024/10/01 10:35:16.000.141,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\cartao_credito.png</Transaction>
+    <Transaction>2024/10/01 10:35:16.000.241,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\real.jpg</Transaction>
+    <Transaction>2024/10/01 10:39:07.000.429,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\img\real.png</Transaction>
+    <Transaction>2024/10/01 11:56:25.000.861,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.pas</Transaction>
+    <Transaction>2024/10/01 11:56:49.000.472,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFormConsultar.dfm=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.dfm</Transaction>
+    <Transaction>2024/10/01 11:56:49.000.472,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFormConsultar.pas=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.pas</Transaction>
+    <Transaction>2024/10/01 14:32:32.000.591,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.pas</Transaction>
+    <Transaction>2024/10/01 14:35:05.000.412,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFormFundo.dfm=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.dfm</Transaction>
+    <Transaction>2024/10/01 14:35:05.000.412,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFormFundo.pas=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.pas</Transaction>
+    <Transaction>2024/10/01 21:54:51.000.552,=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.pas</Transaction>
+    <Transaction>2024/10/01 21:55:18.000.185,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.dfm=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFormConsultarResultado.dfm</Transaction>
+    <Transaction>2024/10/01 21:55:18.000.185,C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\Unit1.pas=C:\Users\Windows 10\Documents\fontes\Layout PDV Responsivo Moderno\src\View\uFormConsultarResultado.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,20 @@
+program LayoutPDV;
+
+{$R *.dres}
+
+uses
+  Vcl.Forms,
+  uFormPrincipal in 'src\View\uFormPrincipal.pas' {FRM_PRINCIPAL},
+  uFrameAcoes in 'src\View\uFrameAcoes.pas' {FrameMenu: TFrame},
+  uFramePagamento in 'src\View\uFramePagamento.pas' {Frame_Pagamento: TFrame},
+  uFormConsultar in 'src\View\uFormConsultar.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFRM_PRINCIPAL, FRM_PRINCIPAL);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

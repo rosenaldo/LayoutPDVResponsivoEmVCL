@@ -1,0 +1,257 @@
+unit uFrameAcoes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls,
+  Vcl.StdCtrls,
+  Vcl.Imaging.pngimage, uFramePagamento, uFormConsultar;
+
+type
+  TFrameMenu = class(TFrame)
+    Panel1: TPanel;
+    P_ACOES: TPanel;
+    P_01: TPanel;
+    Panel3: TPanel;
+    P_02: TPanel;
+    Panel5: TPanel;
+    P_03: TPanel;
+    Panel7: TPanel;
+    P_04: TPanel;
+    Panel9: TPanel;
+    P_06: TPanel;
+    Panel11: TPanel;
+    P_05: TPanel;
+    Panel13: TPanel;
+    P_08: TPanel;
+    Panel15: TPanel;
+    P_07: TPanel;
+    Panel17: TPanel;
+    P_09: TPanel;
+    Panel19: TPanel;
+    P_10: TPanel;
+    Panel21: TPanel;
+    P_11: TPanel;
+    Panel23: TPanel;
+    Image1: TImage;
+    Label1: TLabel;
+    Image2: TImage;
+    Image3: TImage;
+    Image4: TImage;
+    Image5: TImage;
+    Image6: TImage;
+    Image7: TImage;
+    Image8: TImage;
+    Image9: TImage;
+    Image10: TImage;
+    Image11: TImage;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    procedure Image1MouseEnter(Sender: TObject);
+    procedure Image1MouseLeave(Sender: TObject);
+    procedure Image2MouseEnter(Sender: TObject);
+    procedure Image2MouseLeave(Sender: TObject);
+    procedure Image11MouseEnter(Sender: TObject);
+    procedure Image11MouseLeave(Sender: TObject);
+    procedure Image3MouseLeave(Sender: TObject);
+    procedure Image3MouseEnter(Sender: TObject);
+    procedure Image10MouseEnter(Sender: TObject);
+    procedure Image10MouseLeave(Sender: TObject);
+    procedure Image4MouseLeave(Sender: TObject);
+    procedure Image4MouseEnter(Sender: TObject);
+    procedure Image9MouseEnter(Sender: TObject);
+    procedure Image9MouseLeave(Sender: TObject);
+    procedure Image5MouseLeave(Sender: TObject);
+    procedure Image5MouseEnter(Sender: TObject);
+    procedure Image8MouseEnter(Sender: TObject);
+    procedure Image8MouseLeave(Sender: TObject);
+    procedure Image6MouseLeave(Sender: TObject);
+    procedure Image6MouseEnter(Sender: TObject);
+    procedure Image7MouseEnter(Sender: TObject);
+    procedure Image7MouseLeave(Sender: TObject);
+    procedure Image2Click(Sender: TObject);
+    procedure Image10Click(Sender: TObject);
+  private
+    procedure AddImagem(Componente: TImage; Resource: string);
+    procedure FormatarButaoAoEntrar(Panel: TPanel; Image: TImage;
+      _Label: TLabel; Resource: String);
+    procedure FormatarButaoAoSair(Panel: TPanel; Image: TImage; _Label: TLabel;
+      Resource: String);
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+{ TFrameMenu }
+
+procedure TFrameMenu.AddImagem(Componente: TImage; Resource: string);
+var
+  _Resource: TResourceStream;
+begin
+  _Resource := TResourceStream.Create(HInstance, Resource, RT_RCDATA);
+
+  try
+    Componente.Picture.LoadFromStream(_Resource);
+  finally
+    _Resource.Free;
+  end;
+
+end;
+
+procedure TFrameMenu.FormatarButaoAoEntrar(Panel: TPanel; Image: TImage;
+  _Label: TLabel; Resource: String);
+begin
+  Panel.Color := clWhite;
+  _Label.Font.Color := clWindowFrame;
+  AddImagem(Image, 'black_' + Resource);
+end;
+
+procedure TFrameMenu.FormatarButaoAoSair(Panel: TPanel; Image: TImage;
+  _Label: TLabel; Resource: String);
+begin
+  Panel.Color := StringToColor('$00D58219');
+  _Label.Font.Color := clWhite;
+  AddImagem(Image, Resource);
+end;
+
+procedure TFrameMenu.Image10Click(Sender: TObject);
+begin
+  FRM_CONSULTAR.Left := Round((Screen.Width - FRM_CONSULTAR.Width) / 2);
+end;
+
+procedure TFrameMenu.Image10MouseEnter(Sender: TObject);
+begin
+  FormatarButaoAoEntrar(Panel13, Image10, Label9, 'customer');
+end;
+
+procedure TFrameMenu.Image10MouseLeave(Sender: TObject);
+begin
+  FormatarButaoAoSair(Panel13, Image10, Label9, 'customerW');
+end;
+
+procedure TFrameMenu.Image11MouseEnter(Sender: TObject);
+begin
+  FormatarButaoAoEntrar(Panel7, Image11, Label10, 'printer');
+end;
+
+procedure TFrameMenu.Image11MouseLeave(Sender: TObject);
+begin
+  FormatarButaoAoSair(Panel7, Image11, Label10, 'printerW');
+end;
+
+procedure TFrameMenu.Image1MouseEnter(Sender: TObject);
+begin
+  FormatarButaoAoEntrar(Panel3, Image1, Label1, 'document');
+
+end;
+
+procedure TFrameMenu.Image1MouseLeave(Sender: TObject);
+begin
+  FormatarButaoAoSair(Panel3, Image1, Label1, 'documentW');
+end;
+
+procedure TFrameMenu.Image2Click(Sender: TObject);
+var
+  FramePagamento: TFrame_Pagamento;
+begin
+  FramePagamento := TFrame_Pagamento.Create(Self);
+  Self.Parent.Width := FramePagamento.Width;
+  FramePagamento.Parent := Self.Parent;
+  FramePagamento.FrameParent := Self;
+  FramePagamento.Show;
+end;
+
+procedure TFrameMenu.Image2MouseEnter(Sender: TObject);
+begin
+  FormatarButaoAoEntrar(Panel5, Image2, Label2, 'grocery');
+end;
+
+procedure TFrameMenu.Image2MouseLeave(Sender: TObject);
+begin
+  FormatarButaoAoSair(Panel5, Image2, Label2, 'groceryW');
+end;
+
+procedure TFrameMenu.Image3MouseEnter(Sender: TObject);
+begin
+  FormatarButaoAoEntrar(Panel9, Image3, Label3, 'recycle');
+end;
+
+procedure TFrameMenu.Image3MouseLeave(Sender: TObject);
+begin
+  FormatarButaoAoSair(Panel9, Image3, Label3, 'recycleW');
+end;
+
+procedure TFrameMenu.Image4MouseEnter(Sender: TObject);
+begin
+  FormatarButaoAoEntrar(Panel11, Image4, Label4, 'profile');
+end;
+
+procedure TFrameMenu.Image4MouseLeave(Sender: TObject);
+begin
+  FormatarButaoAoSair(Panel11, Image4, Label4, 'profileW');
+end;
+
+procedure TFrameMenu.Image5MouseEnter(Sender: TObject);
+begin
+  FormatarButaoAoEntrar(Panel15, Image5, Label5, 'purchasing');
+end;
+
+procedure TFrameMenu.Image5MouseLeave(Sender: TObject);
+begin
+  FormatarButaoAoSair(Panel15, Image5, Label5, 'purchasingW');
+end;
+
+procedure TFrameMenu.Image6MouseEnter(Sender: TObject);
+begin
+  FormatarButaoAoEntrar(Panel21, Image6, Label6, 'cupom');
+end;
+
+procedure TFrameMenu.Image6MouseLeave(Sender: TObject);
+begin
+  FormatarButaoAoSair(Panel21, Image6, Label6, 'cupomW');
+end;
+
+procedure TFrameMenu.Image7MouseEnter(Sender: TObject);
+begin
+  FormatarButaoAoEntrar(Panel23, Image7, Label7, 'settings');
+end;
+
+procedure TFrameMenu.Image7MouseLeave(Sender: TObject);
+begin
+  FormatarButaoAoSair(Panel23, Image7, Label7, 'settingsW');
+end;
+
+procedure TFrameMenu.Image8MouseEnter(Sender: TObject);
+begin
+  FormatarButaoAoEntrar(Panel19, Image8, Label11, 'voucher');
+end;
+
+procedure TFrameMenu.Image8MouseLeave(Sender: TObject);
+begin
+  FormatarButaoAoSair(Panel19, Image8, Label11, 'voucherW');
+end;
+
+procedure TFrameMenu.Image9MouseEnter(Sender: TObject);
+begin
+  FormatarButaoAoEntrar(Panel17, Image9, Label8, 'credit');
+end;
+
+procedure TFrameMenu.Image9MouseLeave(Sender: TObject);
+begin
+  FormatarButaoAoSair(Panel17, Image9, Label8, 'creditW');
+end;
+
+end.
